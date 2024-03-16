@@ -8,7 +8,6 @@ output:
     toc: true
 ---
 
-
 ```{r include=FALSE,echo=FALSE}
 require(tigerstats)
 require(tidyverse)
@@ -43,11 +42,16 @@ plot(EDUC~VOTE16,data=GSSdata)
 ```
 In looking at the media, people who vote have a median of 15 years of education and the people who did not vote have a median of 13 years of education. 
 
-
-
 #### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(EDUC~VOTE16,data=GSSdata)
+```
+
+Looking at the numerical results we can see that people who voted have a higher average education level of 15.625 years and those who did not vote have a lower average education level at 13.7 years. 128 people voted and 50 people did not vote which show that people who have higher level of educational to vote more.
+
 
 ### Inferential Results
 
